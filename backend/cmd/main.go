@@ -1,12 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"log"
-	"net/http"
 	"os"
 
 	"github.com/forja-pro/forja-labs-posts/config"
+	"github.com/forja-pro/forja-labs-posts/internal/infra/server"
 )
 
 func main() {
@@ -26,12 +25,5 @@ func main() {
 
 	log.Println("Database connection established successfully: " + db.Name())
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello World!\n")
-	})
-
-	log.Printf("Server started on port %s", port)
-	if err := http.ListenAndServe(":"+port, nil); err != nil {
-		log.Fatal(err)
-	}
+	server.Init(port)
 }
