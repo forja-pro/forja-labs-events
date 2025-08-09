@@ -105,6 +105,13 @@ This project demonstrates modern software architecture patterns across multiple 
 <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
 </td>
 <td align="center" width="150">
+<img src="https://via.placeholder.com/100x100/0ea5e9/ffffff?text=👨‍💻" width="100" height="100" style="border-radius: 50%;">
+<br><strong>Frontend Lead</strong>
+<br><em>[Available Position]</em>
+<br>
+<a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+</td>
+<td align="center" width="150">
 <img src="https://via.placeholder.com/100x100/10b981/ffffff?text=⚛️" width="100" height="100" style="border-radius: 50%;">
 <br><strong>React Developer</strong>
 <br><em>[Available Position]</em>
@@ -140,6 +147,13 @@ This project demonstrates modern software architecture patterns across multiple 
 <td align="center" width="150">
 <img src="https://avatars.githubusercontent.com/u/20804404?v=4" width="100" height="100" style="border-radius: 50%;">
 <br><strong>Vinicius Rossado</strong>
+<br><em>iOS Developer</em>
+<br>
+<a href="https://github.com/vinirossado"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+</td>
+<td align="center" width="150">
+<img src="" width="100" height="100" style="border-radius: 50%;">
+<br><strong>[Wali]</strong>
 <br><em>iOS Developer</em>
 <br>
 <a href="https://github.com/vinirossado"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
@@ -192,6 +206,13 @@ This project demonstrates modern software architecture patterns across multiple 
 <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
 </td>
 <td align="center" width="150">
+<img src="https://via.placeholder.com/100x100/a855f7/ffffff?text=K" width="100" height="100" style="border-radius: 50%;">
+<br><strong>Kotlin Developer</strong>
+<br><em>[Available Position]</em>
+<br>
+<a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+</td>
+<td align="center" width="150">
 <img src="https://via.placeholder.com/100x100/ef4444/ffffff?text=🏗️" width="100" height="100" style="border-radius: 50%;">
 <br><strong>Mobile Architect</strong>
 <br><em>[Available Position]</em>
@@ -220,6 +241,13 @@ This project demonstrates modern software architecture patterns across multiple 
 <td align="center" width="150">
 <img src="https://via.placeholder.com/100x100/f97316/ffffff?text=🚀" width="100" height="100" style="border-radius: 50%;">
 <br><strong>Backend Lead</strong>
+<br><em>[Available Position]</em>
+<br>
+<a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+</td>
+<td align="center" width="150">
+<img src="https://via.placeholder.com/100x100/0891b2/ffffff?text=🗄️" width="100" height="100" style="border-radius: 50%;">
+<br><strong>Database Architect</strong>
 <br><em>[Available Position]</em>
 <br>
 <a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
