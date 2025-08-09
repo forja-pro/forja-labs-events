@@ -8,7 +8,6 @@ class ArticleDetailInteractor: ArticleDetailBusinessLogic {
     var presenter: ArticlePresentationLogic?
     func loadArticle(request: ArticleDetail.LoadArticle.Request) {
         _ = ArticleDetail.Response(article: .init(id: 1, title: "Titulo", author: "Willians V"))
-        //presenter?.presentArticle(viewModel: articleResponse)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.fetchArticleData(articleId: request.articleId)
         }
