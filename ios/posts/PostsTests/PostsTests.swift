@@ -1,10 +1,3 @@
-//
-//  PostsTests.swift
-//  PostsTests
-//
-//  Created by Willians Varela on 09/08/25.
-//
-
 import Testing
 
 struct PostsTests {

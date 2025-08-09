@@ -1,10 +1,3 @@
-//
-//  PostsUITestsLaunchTests.swift
-//  PostsUITests
-//
-//  Created by Willians Varela on 09/08/25.
-//
-
 import XCTest
 
 final class PostsUITestsLaunchTests: XCTestCase {
