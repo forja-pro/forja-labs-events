@@ -11,7 +11,7 @@ var (
 func Init() error {
 	var err error
 
-	db, err = InitDB()
+	db, err = initDB()
 	if err != nil {
 		return err
 	}

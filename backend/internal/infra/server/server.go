@@ -8,7 +8,7 @@ import (
 )
 
 func Init(port string) {
-	routes.Setup()
+	routes.Init()
 
 	log.Printf("Server started on port %s", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {

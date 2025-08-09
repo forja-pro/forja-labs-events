@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func InitDB() (*gorm.DB, error) {
+func initDB() (*gorm.DB, error) {
 	host := os.Getenv("POSTGRES_HOST")
 	user := os.Getenv("POSTGRES_USER")
 	pass := os.Getenv("POSTGRES_PASSWORD")

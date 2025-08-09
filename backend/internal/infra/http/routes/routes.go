@@ -6,6 +6,6 @@ import (
 	"github.com/forja-pro/forja-labs-posts/internal/infra/http/controller"
 )
 
-func Setup() {
-	http.HandleFunc("/", controller.HelloWorld)
+func Init() {
+	http.HandleFunc("GET /", controller.HelloWorld)
 }
