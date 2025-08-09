@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct ArticleView: View {
+    @StateObject private var presenter = ArticlePresenter()
+    let articleId: Int
+    
+    init(articleId: Int = 123) {
+        self.articleId = articleId
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ScrollView{
+                articleContent
+            }
+            .navigationTitle("Article")
+            .navigationBarTitleDisplayMode(.inline)
+            .onAppear{loadArticle()}
+        }
+    }
+    
+    
+    private var articleContent: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(presenter.title)
+            Spacer()
+            Text(presenter.author)
+        }
+        .padding()
+    }
+    
+    
+    private func loadArticle() {
+        let request = ArticleDetail.LoadArticle.Request(articleId: articleId)
+        presenter.interactor.loadArticle(request: request)
     }
 }
 
