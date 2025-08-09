@@ -5,13 +5,15 @@ import (
 	"net/http"
 
 	"github.com/forja-pro/forja-labs-posts/internal/infra/http/routes"
+	"github.com/gin-gonic/gin"
 )
 
 func Init(port string) {
-	routes.Init()
+	r := gin.Default()
+	routes.SetupRoutes(r)
 
 	log.Printf("Server started on port %s", port)
-	if err := http.ListenAndServe(":"+port, nil); err != nil {
+	if err := http.ListenAndServe(":"+port, r); err != nil {
 		log.Fatal(err)
 	}
 }
