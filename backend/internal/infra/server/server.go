@@ -1,15 +1,14 @@
 package server
 
 import (
-	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/forja-pro/forja-labs-posts/internal/infra/http/routes"
 )
 
 func Init(port string) {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello World!\n")
-	})
+	routes.Setup()
 
 	log.Printf("Server started on port %s", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {

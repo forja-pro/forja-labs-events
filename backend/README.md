@@ -79,7 +79,7 @@ cd forja-labs-posts/backend
 4. Run the application using Docker Compose:
 
 ```bash
-docker-compose up -d
+docker-compose up
 ```
 
 ## Dependencies
