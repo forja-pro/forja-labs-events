@@ -138,7 +138,7 @@ This project demonstrates modern software architecture patterns across multiple 
 <table>
 <tr>
 <td align="center" width="150">
-<img src="https://via.placeholder.com/100x100/3b82f6/ffffff?text=VR" width="100" height="100" style="border-radius: 50%;">
+<img src="https://avatars.githubusercontent.com/u/20804404?v=4" width="100" height="100" style="border-radius: 50%;">
 <br><strong>Vinicius Rossado</strong>
 <br><em>iOS Developer</em>
 <br>
