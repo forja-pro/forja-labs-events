@@ -12,21 +12,21 @@
 			containerPortal = ED82085C2E47D226008C3537 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED8208632E47D226008C3537;
-			remoteInfo = posts;
+			remoteInfo = Posts;
 		};
 		ED82087D2E47D228008C3537 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ED82085C2E47D226008C3537 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED8208632E47D226008C3537;
-			remoteInfo = posts;
+			remoteInfo = Posts;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED8208642E47D226008C3537 /* posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = posts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED8208722E47D228008C3537 /* postsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = postsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED82087C2E47D228008C3537 /* postsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = postsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8208642E47D226008C3537 /* Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8208722E47D228008C3537 /* PostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED82087C2E47D228008C3537 /* PostsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		ED8208652E47D226008C3537 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED8208642E47D226008C3537 /* posts.app */,
-				ED8208722E47D228008C3537 /* postsTests.xctest */,
-				ED82087C2E47D228008C3537 /* postsUITests.xctest */,
+				ED8208642E47D226008C3537 /* Posts.app */,
+				ED8208722E47D228008C3537 /* PostsTests.xctest */,
+				ED82087C2E47D228008C3537 /* PostsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED8208632E47D226008C3537 /* posts */ = {
+		ED8208632E47D226008C3537 /* Posts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED8208862E47D228008C3537 /* Build configuration list for PBXNativeTarget "posts" */;
+			buildConfigurationList = ED8208862E47D228008C3537 /* Build configuration list for PBXNativeTarget "Posts" */;
 			buildPhases = (
 				ED8208602E47D226008C3537 /* Sources */,
 				ED8208612E47D226008C3537 /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				ED8208662E47D226008C3537 /* posts */,
 			);
-			name = posts;
+			name = Posts;
 			packageProductDependencies = (
 			);
-			productName = posts;
-			productReference = ED8208642E47D226008C3537 /* posts.app */;
+			productName = Posts;
+			productReference = ED8208642E47D226008C3537 /* Posts.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ED8208712E47D228008C3537 /* postsTests */ = {
+		ED8208712E47D228008C3537 /* PostsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED8208892E47D228008C3537 /* Build configuration list for PBXNativeTarget "postsTests" */;
+			buildConfigurationList = ED8208892E47D228008C3537 /* Build configuration list for PBXNativeTarget "PostsTests" */;
 			buildPhases = (
 				ED82086E2E47D228008C3537 /* Sources */,
 				ED82086F2E47D228008C3537 /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				ED8208752E47D228008C3537 /* postsTests */,
 			);
-			name = postsTests;
+			name = PostsTests;
 			packageProductDependencies = (
 			);
-			productName = postsTests;
-			productReference = ED8208722E47D228008C3537 /* postsTests.xctest */;
+			productName = PostsTests;
+			productReference = ED8208722E47D228008C3537 /* PostsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ED82087B2E47D228008C3537 /* postsUITests */ = {
+		ED82087B2E47D228008C3537 /* PostsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED82088C2E47D228008C3537 /* Build configuration list for PBXNativeTarget "postsUITests" */;
+			buildConfigurationList = ED82088C2E47D228008C3537 /* Build configuration list for PBXNativeTarget "PostsUITests" */;
 			buildPhases = (
 				ED8208782E47D228008C3537 /* Sources */,
 				ED8208792E47D228008C3537 /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				ED82087F2E47D228008C3537 /* postsUITests */,
 			);
-			name = postsUITests;
+			name = PostsUITests;
 			packageProductDependencies = (
 			);
-			productName = postsUITests;
-			productReference = ED82087C2E47D228008C3537 /* postsUITests.xctest */;
+			productName = PostsUITests;
+			productReference = ED82087C2E47D228008C3537 /* PostsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED8208632E47D226008C3537 /* posts */,
-				ED8208712E47D228008C3537 /* postsTests */,
-				ED82087B2E47D228008C3537 /* postsUITests */,
+				ED8208632E47D226008C3537 /* Posts */,
+				ED8208712E47D228008C3537 /* PostsTests */,
+				ED82087B2E47D228008C3537 /* PostsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		ED8208742E47D228008C3537 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED8208632E47D226008C3537 /* posts */;
+			target = ED8208632E47D226008C3537 /* Posts */;
 			targetProxy = ED8208732E47D228008C3537 /* PBXContainerItemProxy */;
 		};
 		ED82087E2E47D228008C3537 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED8208632E47D226008C3537 /* posts */;
+			target = ED8208632E47D226008C3537 /* Posts */;
 			targetProxy = ED82087D2E47D228008C3537 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -389,8 +389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = posts/posts.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJYT7G6SPX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -408,8 +410,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = forja.posts;
+				PRODUCT_BUNDLE_IDENTIFIER = forja.Posts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -426,8 +429,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = posts/posts.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJYT7G6SPX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -445,8 +450,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = forja.posts;
+				PRODUCT_BUNDLE_IDENTIFIER = forja.Posts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -467,14 +473,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = forja.postsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = forja.PostsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/posts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/posts";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Posts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Posts";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -489,14 +495,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = forja.postsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = forja.PostsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/posts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/posts";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Posts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Posts";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
@@ -510,14 +516,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = forja.postsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = forja.PostsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = posts;
+				TEST_TARGET_NAME = Posts;
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -531,14 +537,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = forja.postsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = forja.PostsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = posts;
+				TEST_TARGET_NAME = Posts;
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
@@ -555,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED8208862E47D228008C3537 /* Build configuration list for PBXNativeTarget "posts" */ = {
+		ED8208862E47D228008C3537 /* Build configuration list for PBXNativeTarget "Posts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED8208872E47D228008C3537 /* Debug */,
@@ -564,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED8208892E47D228008C3537 /* Build configuration list for PBXNativeTarget "postsTests" */ = {
+		ED8208892E47D228008C3537 /* Build configuration list for PBXNativeTarget "PostsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED82088A2E47D228008C3537 /* Debug */,
@@ -573,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED82088C2E47D228008C3537 /* Build configuration list for PBXNativeTarget "postsUITests" */ = {
+		ED82088C2E47D228008C3537 /* Build configuration list for PBXNativeTarget "PostsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED82088D2E47D228008C3537 /* Debug */,
