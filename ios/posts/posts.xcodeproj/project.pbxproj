@@ -30,19 +30,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		ED8208662E47D226008C3537 /* posts */ = {
+		ED8208662E47D226008C3537 /* Posts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = posts;
+			path = Posts;
 			sourceTree = "<group>";
 		};
-		ED8208752E47D228008C3537 /* postsTests */ = {
+		ED8208752E47D228008C3537 /* PostsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = postsTests;
+			path = PostsTests;
 			sourceTree = "<group>";
 		};
-		ED82087F2E47D228008C3537 /* postsUITests */ = {
+		ED82087F2E47D228008C3537 /* PostsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = postsUITests;
+			path = PostsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		ED82085B2E47D226008C3537 = {
 			isa = PBXGroup;
 			children = (
-				ED8208662E47D226008C3537 /* posts */,
-				ED8208752E47D228008C3537 /* postsTests */,
-				ED82087F2E47D228008C3537 /* postsUITests */,
+				ED8208662E47D226008C3537 /* Posts */,
+				ED8208752E47D228008C3537 /* PostsTests */,
+				ED82087F2E47D228008C3537 /* PostsUITests */,
 				ED8208652E47D226008C3537 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				ED8208662E47D226008C3537 /* posts */,
+				ED8208662E47D226008C3537 /* Posts */,
 			);
 			name = Posts;
 			packageProductDependencies = (
@@ -131,7 +131,7 @@
 				ED8208742E47D228008C3537 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				ED8208752E47D228008C3537 /* postsTests */,
+				ED8208752E47D228008C3537 /* PostsTests */,
 			);
 			name = PostsTests;
 			packageProductDependencies = (
@@ -154,7 +154,7 @@
 				ED82087E2E47D228008C3537 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				ED82087F2E47D228008C3537 /* postsUITests */,
+				ED82087F2E47D228008C3537 /* PostsUITests */,
 			);
 			name = PostsUITests;
 			packageProductDependencies = (
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED82085F2E47D226008C3537 /* Build configuration list for PBXProject "posts" */;
+			buildConfigurationList = ED82085F2E47D226008C3537 /* Build configuration list for PBXProject "Posts" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -552,7 +552,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED82085F2E47D226008C3537 /* Build configuration list for PBXProject "posts" */ = {
+		ED82085F2E47D226008C3537 /* Build configuration list for PBXProject "Posts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED8208842E47D228008C3537 /* Debug */,
