@@ -1,21 +1,25 @@
 import Foundation
 
 protocol ArticlePresentationLogic {
-  func presentArticle(viewModel: ArticleDetail.Response)
+    func presentArticle(response: ArticleDetail.LoadArticle.Response)
+    func presentLoadingState()
 }
 
-class ArticlePresenter: ObservableObject, ArticlePresentationLogic {
-  @Published var title: String = "Title"
-  @Published var author: String = "Fulano"
-
-  lazy var interactor: ArticleDetailBusinessLogic = {
-    let interactor = ArticleDetailInteractor()
-    interactor.presenter = self
-    return interactor
-  }()
-
-  func presentArticle(viewModel: ArticleDetail.Response) {
-    self.title = viewModel.article.title
-    self.author = viewModel.article.author
-  }
+class ArticleDetailPresenter: ArticlePresentationLogic {
+    var viewModel: ArticleDetailViewModel?
+    
+    // MARK: - Presentation Logic
+    
+    func presentArticle(response: ArticleDetail.LoadArticle.Response) {
+        self.viewModel?.isLoading = false
+        self.viewModel?.title = response.article.title
+        self.viewModel?.author = "By \(response.article.author)"
+    }
+    
+    
+    func presentLoadingState() {
+        DispatchQueue.main.async { [weak self] in
+            self?.viewModel?.isLoading = true
+        }
+    }
 }

@@ -1,39 +1,65 @@
 import SwiftUI
 
-struct ArticleView: View {
-  @StateObject private var presenter = ArticlePresenter()
-  let articleId: Int
-
-  init(articleId: Int = 123) {
-    self.articleId = articleId
-  }
-
-  var body: some View {
-    NavigationView {
-      ScrollView {
-        articleContent
-      }
-      .navigationTitle("Article")
-      .navigationBarTitleDisplayMode(.inline)
-      .onAppear { loadArticle() }
+struct ArticleDetailView: View {
+    @StateObject private var viewModel: ArticleDetailViewModel
+    let articleId: Int
+    
+    init(viewModel: ArticleDetailViewModel, articleId: Int = 123) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.articleId = articleId
     }
-  }
+    
+    var body: some View {
+        NavigationView {
+            ScrollView {
+                VStack(spacing: 20) {
+                    if viewModel.isLoading {
+                        loadingView
+                    }  else {
+                        contentView
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle("Article")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .onAppear {
+            viewModel.loadArticle(articleId: articleId)
+        }
+    }
+    
+    private var contentView: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(viewModel.title)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.leading)
+            
+            Text(viewModel.author)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+        }
+    }
+}
 
-  private var articleContent: some View {
-    VStack(alignment: .leading, spacing: 16) {
-      Text(presenter.title)
-      Spacer()
-      Text(presenter.author)
+private var loadingView: some View {
+    VStack {
+        ProgressView()
+        Text("Loading article...")
+            .foregroundColor(.secondary)
     }
     .padding()
-  }
+}
 
-  private func loadArticle() {
-    let request = ArticleDetail.LoadArticle.Request(articleId: articleId)
-    presenter.interactor.loadArticle(request: request)
-  }
+// MARK: - Factory Method for Creation
+
+extension ArticleDetailView {
+    static func create(articleId: Int) -> ArticleDetailView {
+        return ArticleDetailRouter.createModule(articleId: articleId)
+    }
 }
 
 #Preview {
-  ArticleView()
+    ArticleDetailView.create(articleId: 123)
 }

@@ -1,18 +1,19 @@
 import Foundation
 
 enum ArticleDetail {
-  enum LoadArticle {
-    struct Request {
-      let articleId: Int
+    enum LoadArticle {
+        struct Request {
+            let articleId: Int
+        }
+        
+        struct Response {
+            let article: Article
+        }
     }
-  }
-  struct Response {
-    let article: Article
-  }
 }
 
-struct Article {
-  let id: Int
-  let title: String
-  let author: String
+struct Article: Identifiable, Codable {
+    let id: Int
+    let title: String
+    let author: String
 }

@@ -1,30 +1,40 @@
 import Foundation
 
+import Foundation
+
 protocol ArticleDetailBusinessLogic {
-  func loadArticle(request: ArticleDetail.LoadArticle.Request)
+    func loadArticle(request: ArticleDetail.LoadArticle.Request) async
 }
 
-class ArticleDetailInteractor: ArticleDetailBusinessLogic {
-  var presenter: ArticlePresentationLogic?
-  func loadArticle(request: ArticleDetail.LoadArticle.Request) {
-    ArticleDetail.Response(article: .init(id: 1, title: "Titulo", author: "Willians V"))
-    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-      self.fetchArticleData(articleId: request.articleId)
+protocol ArticleDetailDataStore {
+    var article: Article? { get set }
+}
+
+@MainActor
+class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStore {
+    var presenter: ArticlePresentationLogic?
+    var worker: ArticleDetailWorkerLogic?
+    
+    // MARK: - Data Store
+    var article: Article?
+    
+    // MARK: - Business Logic
+    
+    func loadArticle(request: ArticleDetail.LoadArticle.Request) async {
+        presenter?.presentLoadingState()
+        
+        do {
+            guard let worker = worker else {
+                return
+            }
+            
+            let article = try await worker.fetchArticle(articleId: request.articleId)
+            self.article = article
+            
+            let response = ArticleDetail.LoadArticle.Response(article: article)
+            presenter?.presentArticle(response: response)
+            
+        } catch {//TODO: Add some errors here...
+        }
     }
-  }
-
-  private func fetchArticleData(articleId: Int) {
-    // Simula dados do artigo (aqui você faria a chamada real da API)
-    let article = Article(
-      id: articleId,
-      title: "SwiftUI e Arquitetura VIP: Um Guia Completo",
-      author: "João Silva",
-    )
-
-    let response = ArticleDetail.Response(
-      article: article
-    )
-
-    presenter?.presentArticle(viewModel: response)
-  }
 }
