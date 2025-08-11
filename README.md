@@ -239,11 +239,11 @@ This project demonstrates modern software architecture patterns across multiple 
 <table>
 <tr>
 <td align="center" width="150">
-<img src="https://via.placeholder.com/100x100/f97316/ffffff?text=🚀" width="100" height="100" style="border-radius: 50%;">
-<br><strong>Backend Lead</strong>
-<br><em>[Available Position]</em>
+<img src="https://avatars.githubusercontent.com/u/178206254?v=4🚀" width="100" height="100" style="border-radius: 50%;">
+<br><strong>Francisco Soares</strong>
+<br><em>IT Intern</em>
 <br>
-<a href="#"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://github.com/devfrancisco01"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
 </td>
 <td align="center" width="150">
 <img src="https://via.placeholder.com/100x100/0891b2/ffffff?text=🗄️" width="100" height="100" style="border-radius: 50%;">
