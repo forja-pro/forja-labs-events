@@ -23,6 +23,7 @@ struct ArticleDetailView: View {
             }
             .navigationTitle("Article")
             .navigationBarTitleDisplayMode(.inline)
+            .accessibilityIdentifier("article_detail_view")
         }
         .onAppear {
             viewModel.loadArticle(articleId: articleId)
@@ -35,10 +36,14 @@ struct ArticleDetailView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
+                .accessibilityIdentifier("article_title")
+                .accessibilityLabel("Article title")
             
             Text(viewModel.author)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
+                .accessibilityIdentifier("article_author")
+                .accessibilityLabel("Article author")
         }
     }
 }
@@ -46,8 +51,11 @@ struct ArticleDetailView: View {
 private var loadingView: some View {
     VStack {
         ProgressView()
+            .accessibilityIdentifier("loading_progress")
+            .accessibilityLabel("Loading article")
         Text("Loading article...")
             .foregroundColor(.secondary)
+            .accessibilityIdentifier("loading_text")
     }
     .padding()
 }

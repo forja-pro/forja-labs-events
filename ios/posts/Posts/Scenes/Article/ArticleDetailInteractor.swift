@@ -11,7 +11,7 @@ protocol ArticleDetailDataStore {
 }
 
 @MainActor
-class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStore {
+class ArticleDetailInteractor: ArticleDetailBusinessLogic, @preconcurrency ArticleDetailDataStore {
     var presenter: ArticlePresentationLogic?
     var worker: ArticleDetailWorkerLogic?
     
