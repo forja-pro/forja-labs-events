@@ -10,7 +10,6 @@ protocol ArticleDetailDataStore {
     var article: Article? { get set }
 }
 
-@MainActor
 class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStore {
     var presenter: ArticlePresentationLogic?
     var worker: ArticleDetailWorkerLogic?

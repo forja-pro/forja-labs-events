@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class ProfileViewModel: ObservableObject {
     @Published var title: String = ""
     @Published var message: String = ""

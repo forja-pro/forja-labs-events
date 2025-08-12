@@ -21,11 +21,7 @@ class SettingsViewModel: ObservableObject {
     
     // MARK: - User Actions
     func toggleDarkMode() {
-        Task {
-            interactor.toggleDarkMode(isDarkMode)
-        }
+        interactor.toggleDarkMode(isDarkMode)
     }
-
-
 }
 
