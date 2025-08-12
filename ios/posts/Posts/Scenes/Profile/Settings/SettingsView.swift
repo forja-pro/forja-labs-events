@@ -53,7 +53,9 @@ struct SettingsView: View {
                                 } else {
                                     Toggle("", isOn: $viewModel.isDarkMode)
                                         .labelsHidden()
-                                    
+                                        .onChange(of: viewModel.isDarkMode) {
+                                            viewModel.toggleDarkMode()
+                                        }
                                 }
                             }
                             
@@ -76,22 +78,11 @@ struct SettingsView: View {
                 Spacer()
             }
             .padding()
-//            .navigationTitle("Settings")
-//            .navigationBarTitleDisplayMode(.inline)
         }
-//        .preferredColorScheme(colorScheme)
         .onAppear {
             viewModel.isDarkMode = isDarkMode
         }
     }
-    
-//    private var colorScheme: ColorScheme? {
-//        if isSystemAppearance {
-//            return nil
-//        } else {
-//            return isDarkMode ? .dark : .light
-//        }
-//    }
 }
 
 // MARK: - Factory Method for Creation
