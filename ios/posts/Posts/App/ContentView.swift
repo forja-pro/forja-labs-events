@@ -2,8 +2,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ArticleDetailView.create(articleId: 123)
+        MainTabView()
     }
+}
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            ProfileView.create()
+                .tabItem{
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
+        }.tint(AppTheme.primaryColor)
+    }
+
 }
 
 #Preview {
