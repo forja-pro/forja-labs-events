@@ -1,25 +1,24 @@
 import Foundation
 
 protocol ArticlePresentationLogic {
-    func presentArticle(response: ArticleDetail.LoadArticle.Response)
-    func presentLoadingState()
+    func presentArticle(response: ArticleDetail.LoadArticle.Response) async
+    func presentLoadingState() async
 }
 
+@MainActor
 class ArticleDetailPresenter: ArticlePresentationLogic {
     var viewModel: ArticleDetailViewModel?
     
     // MARK: - Presentation Logic
     
-    func presentArticle(response: ArticleDetail.LoadArticle.Response) {
-        self.viewModel?.isLoading = false
-        self.viewModel?.title = response.article.title
-        self.viewModel?.author = "By \(response.article.author)"
+    func presentArticle(response: ArticleDetail.LoadArticle.Response) async {
+    viewModel?.isLoading = false
+    viewModel?.title = response.article.title
+    viewModel?.author = "By \(response.article.author)"
     }
     
     
-    func presentLoadingState() {
-        DispatchQueue.main.async { [weak self] in
-            self?.viewModel?.isLoading = true
-        }
+    func presentLoadingState() async {
+    viewModel?.isLoading = true
     }
 }

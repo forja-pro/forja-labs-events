@@ -20,7 +20,7 @@ class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStor
     // MARK: - Business Logic
     
     func loadArticle(request: ArticleDetail.LoadArticle.Request) async {
-        presenter?.presentLoadingState()
+    await presenter?.presentLoadingState()
         
         do {
             guard let worker = worker else {
@@ -31,7 +31,7 @@ class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStor
             self.article = article
             
             let response = ArticleDetail.LoadArticle.Response(article: article)
-            presenter?.presentArticle(response: response)
+            await presenter?.presentArticle(response: response)
             
         } catch {//TODO: Add some errors here...
         }

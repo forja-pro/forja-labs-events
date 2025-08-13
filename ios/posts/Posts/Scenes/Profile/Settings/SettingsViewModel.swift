@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class SettingsViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var isDarkMode: Bool = false
@@ -21,7 +22,7 @@ class SettingsViewModel: ObservableObject {
     
     // MARK: - User Actions
     func toggleDarkMode() {
-        interactor.toggleDarkMode(isDarkMode)
+    Task { await interactor.toggleDarkMode(isDarkMode) }
     }
 }
 

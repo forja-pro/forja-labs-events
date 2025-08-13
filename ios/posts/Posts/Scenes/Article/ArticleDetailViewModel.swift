@@ -1,6 +1,7 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class ArticleDetailViewModel: ObservableObject {
     @Published var title: String = ""
     @Published var author: String = ""

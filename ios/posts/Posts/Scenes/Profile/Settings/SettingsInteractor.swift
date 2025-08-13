@@ -8,15 +8,16 @@
 import Foundation
 
 protocol SettingsBusinessLogic {
-    func toggleDarkMode(_ isDarkMode: Bool)
+    func toggleDarkMode(_ isDarkMode: Bool) async
 }
 
 class SettingsInteractor: SettingsBusinessLogic {
     var viewModel: SettingsViewModel?
     
-    func toggleDarkMode(_ isDarkMode: Bool) {
+    func toggleDarkMode(_ isDarkMode: Bool) async {
         UserDefaults.standard.set(isDarkMode, forKey: "isDarkMode")
-        
-        viewModel?.isDarkMode = isDarkMode
+        await MainActor.run { [weak self] in
+            self?.viewModel?.isDarkMode = isDarkMode
+        }
     }
 }
