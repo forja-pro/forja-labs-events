@@ -10,7 +10,6 @@ protocol ArticleDetailDataStore {
     var article: Article? { get set }
 }
 
-@MainActor
 class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStore {
     var presenter: ArticlePresentationLogic?
     var worker: ArticleDetailWorkerLogic?
@@ -21,7 +20,7 @@ class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStor
     // MARK: - Business Logic
     
     func loadArticle(request: ArticleDetail.LoadArticle.Request) async {
-        presenter?.presentLoadingState()
+    await presenter?.presentLoadingState()
         
         do {
             guard let worker = worker else {
@@ -32,7 +31,7 @@ class ArticleDetailInteractor: ArticleDetailBusinessLogic, ArticleDetailDataStor
             self.article = article
             
             let response = ArticleDetail.LoadArticle.Response(article: article)
-            presenter?.presentArticle(response: response)
+            await presenter?.presentArticle(response: response)
             
         } catch {//TODO: Add some errors here...
         }
