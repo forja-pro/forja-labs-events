@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Forja Labs Posts"
+rootProject.name = "android"
 include(":app")
