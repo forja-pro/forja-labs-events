@@ -1,4 +1,4 @@
-package com.forja.forjalabsposts
+package com.example.android
 
 import org.junit.Test
 
